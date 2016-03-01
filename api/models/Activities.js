@@ -1,0 +1,99 @@
+/**
+* Activities.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
+
+module.exports = {
+
+  attributes: {
+
+    activityTheme:{
+      type:'string',
+      size:60,
+      defaultsTo:''
+    },
+    publishUnit:{
+      type:'string',
+      size:60,
+      defaultsTo:''
+    },
+    activityTime:{
+      type:'string',
+      size:100,
+      defaultsTo:''
+    },
+    activityLocation:{
+      type:'string',
+      size:100,
+      defaultsTo:''
+    },
+    activityAddress:{
+      type:'string',
+      size:100,
+      defaultsTo:''
+    },
+    activityCost:{
+      type:'string',
+      size:50,
+      defaultsTo:''
+    },
+    activityMemberCounter:{
+      type:'int',
+      defaultsTo:0
+    },
+    activityDetail:{
+      type:'text',
+      defaultsTo:''
+    },
+    sponsor:{
+      type:'string',
+      size:50,
+      defaultsTo:''
+    },
+    activityImage:{
+      type:'text'
+    },
+    //最新活动状态：0为最新，1为非最新
+    activityState:{
+      type:'integer',
+      size:32
+    },
+    activityDesc:{
+      type:'string',
+      size:255
+    },
+    //签到开始时间
+    registrationStartTime:{
+      type:'integer',
+      size:64
+    },
+    //签到结束时间
+    registrationEndTime:{
+       type:'integer',
+       size:64
+    },
+    //活动开始时间
+    activityStartTime:{
+       type:'integer',
+       size:64
+    },
+    //活动结束时间
+    activityEndTime:{
+       type:'integer',
+       size:64
+    },
+    //0为不需要，1为需要
+    isPay:{
+      type:'integer',
+      size:32,
+      defaultsTo:0
+    },
+    signQrPath:{
+      type:'text',
+      defaultsTo:''
+    }
+  }
+};
+
